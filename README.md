@@ -25,5 +25,11 @@
 	管理mariadb数据库请访问 http://your-ip-address:88/adminer.php
 
 
+###HOST(宿主机)开启启动
 
+	在Linux桌面环境找到启动管理工具，添加新启动项，其中命令部分参考如下：
+	
+	docker-compose -f /mnt/docker/owncloud/docker-compose.yml start
+	
+	注：-f 参数后面是项目的 docker-compose.yml 文件绝对路径。
 
