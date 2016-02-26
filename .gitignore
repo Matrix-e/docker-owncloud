@@ -1,0 +1,6 @@
+*.DS_Store
+._*
+apps/
+config/
+data/
+datadir/

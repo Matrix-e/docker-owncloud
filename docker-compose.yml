@@ -1,0 +1,17 @@
+server:
+  build: .
+  ports:
+    - "88:80"
+  volumes:
+    - ./apps:/var/www/html/apps
+    - ./config:/var/www/html/config
+    - ./data:/var/www/html/data
+  links:
+    - "db:mariadb"
+db:
+  image: mariadb:10.1
+  volumes:
+    - ./mariadb/datadir:/var/lib/mysql
+  environment:
+    MYSQL_DATABASE: "owncloud"
+    MYSQL_ROOT_PASSWORD: "123456"
