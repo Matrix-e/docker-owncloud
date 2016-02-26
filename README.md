@@ -1,6 +1,6 @@
 # GetNAS docker-owncloud
 
----
+
 本项目基于 [owncloud:8.2-apache](https://hub.docker.com/_/owncloud/)、[mariadb:10.1](https://hub.docker.com/_/mariadb/)官方镜像，通过docker-compose工具构建使用。
 
 ###使用方法
